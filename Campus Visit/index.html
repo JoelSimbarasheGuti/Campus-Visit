@@ -7,12 +7,13 @@
         <title>Feedback</title>
     </head>
     <body>
-        <header>
-
+        <header >
+            <h1>Campus <span>Visit</span></h1>
+            <input type="login" value="Login">
         </header>
         <div class="box">
             <div class="details">
-                <form action="/action_page.php">
+                <form action="connect.jsp" method="post">
                     <h2>Respondant <span>Details</span></h2>
 
                     <label for="name">Name</label>
@@ -23,64 +24,85 @@
         
                     <label for="email">Email</label>
                     <input type="text" id="email" name="lastname" placeholder="Email..">
+
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="none">(Rather not say)</option>
+                    </select>
                 </form>
             </div>
         </div>
         <div class="box">
-            <div class="card">
-                <h2>What Did You Like the <span>Most</span>?</h2>
-                
-                <label class="check-box">Students
-                    <input type="checkbox" checked="checked">
-                    <span class="checkmark-box"></span>
-                </label>
-                  
-                <label class="check-box">Location
-                    <input type="checkbox">
-                    <span class="checkmark-box"></span>
-                </label>
-                
-                <label class="check-box">Campus
-                    <input type="checkbox">
-                    <span class="checkmark-box"></span>
-                </label>
-                
-                <label class="check-box">Atmosphere
-                    <input type="checkbox">
-                    <span class="checkmark-box"></span>
-                </label>
+            <form action="connect.jsp" method="post">
+                <div class="card">
+                    <h2>What Did You Like the <span>Most</span>?</h2>
+                    
+                    <label class="check-box">Students
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark-box"></span>
+                    </label>
+                    
+                    <label class="check-box">Location
+                        <input type="checkbox">
+                        <span class="checkmark-box"></span>
+                    </label>
+                    
+                    <label class="check-box">Campus
+                        <input type="checkbox">
+                        <span class="checkmark-box"></span>
+                    </label>
+                    
+                    <label class="check-box">Atmosphere
+                        <input type="checkbox">
+                        <span class="checkmark-box"></span>
+                    </label>
 
-                <label class="check-box">Sports
-                    <input type="checkbox">
-                    <span class="checkmark-box"></span>
-                </label>
-            </div>
-            <div class="card">
-                <h2>How Did You Become Interested in the <span>University</span>?</h2>
-
-                <label class="container">Friends
-                    <input type="checkbox" checked="checked">
-                    <span class="checkmark-radio"></span>
-                  </label>
-                  
-                  <label class="container">Television
-                    <input type="checkbox">
-                    <span class="checkmark-radio"></span>
-                  </label>
-                  
-                  <label class="container">Internet
-                    <input type="checkbox">
-                    <span class="checkmark-radio"></span>
-                  </label>
-                  
-                  <label class="container">Other
-                    <input type="checkbox">
-                    <span class="checkmark-radio"></span>
-                  </label>
-            </div>
+                    <label class="check-box">Sports
+                        <input type="checkbox">
+                        <span class="checkmark-box"></span>
+                    </label>
+                </div>
+            </form>
+            <form action="connect.jsp" method="post">
+                <div class="card">
+                    <h2>How Did You Become Interested in the <span>University</span>?</h2>
+    
+                    <label class="container">Friends
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark-radio"></span>
+                      </label>
+                      
+                      <label class="container">Television
+                        <input type="checkbox">
+                        <span class="checkmark-radio"></span>
+                      </label>
+                      
+                      <label class="container">Internet
+                        <input type="checkbox">
+                        <span class="checkmark-radio"></span>
+                      </label>
+                      
+                      <label class="container">Other
+                        <input type="checkbox">
+                        <span class="checkmark-radio"></span>
+                      </label>
+                </div>
+            </form>
         </div>
         <div class="comment">
-            <p>Comments (<span>Optional</span>)</p>
+            <form action="connect.jsp" method="post">
+                <p><label for="comment">Comments (<span>Optional</span>)</label></p>
+                <textarea id="comment" name="comment" rows="6" cols="100"></textarea>
+                <br>
+              </form>
+        </div>
+        <div class="btns">
+            <form action="connect.jsp" method="post">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </form>
         </div>
     </body>
 </html>
